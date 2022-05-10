@@ -1,0 +1,944 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.background-index {
+  background: -webkit-gradient(linear, left top, right top, from(#93efbd), color-stop(#709ebd), color-stop(95%, #6d72af));
+  background: linear-gradient(90deg, #93efbd, #709ebd, #6d72af 95%);
+}
+
+.form-connexion {
+  margin: 100px auto;
+  max-width: 800px;
+  width: 80%;
+  border: 2px solid #9DE1BC;
+  border-radius: 30px 30px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 30px #7c7c7c;
+          box-shadow: 0px 0px 30px #7c7c7c;
+}
+
+.titre-form-connexion {
+  color: #A2A7D9;
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Montserrat';
+  padding: 3%;
+}
+
+.id-connect {
+  color: #A2A7D9;
+  font-family: 'Montserrat';
+  font-size: 1.7rem;
+  display: block;
+  padding: 2% 14%;
+}
+
+.input-connect {
+  max-width: 600px;
+  width: 70%;
+  height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #9DE1BC;
+}
+
+.btn-connect {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: block;
+  margin: 50px auto;
+  background-color: white;
+  border: 2px solid #9DE1BC;
+  border-radius: 5px 5px;
+  font-size: 1.5rem;
+  color: #A2A7D9;
+  padding: 8px 50px;
+  cursor: pointer;
+}
+
+.btn-connect:hover {
+  background-color: #9DE1BC;
+  color: white;
+}
+
+.row-limit-size {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+.li-header-admin {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+}
+
+.lien {
+  text-decoration: none;
+  color: black;
+  height: 100px;
+  line-height: 85px;
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+}
+
+.lien-right {
+  float: right;
+}
+
+.titre-page-gestion {
+  font-family: 'Montserrat';
+  font-size: 2.4rem;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.btn-ajout-gite {
+  background-color: white;
+  border: 2px solid #9DE1BC;
+  font-family: 'Montserrat';
+  font-size: 1rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 0 30px;
+  border-radius: 5px 5px;
+}
+
+.btn-ajout-gite a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-ajout-gite:hover {
+  background-color: #9DE1BC;
+}
+
+.titre-form-search {
+  font-size: 1.5rem;
+  font-family: 'Montserrat';
+  text-align: center;
+  padding: 20px;
+  letter-spacing: 2px;
+}
+
+.form-add-search {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 850px;
+  width: 95%;
+  padding-top: 50px;
+}
+
+.form-search {
+  padding: 10px;
+}
+
+.div-search-btn .input-p-ajout {
+  height: 25px;
+  width: 400px;
+  border: 2px solid #9DE1BC;
+  border-radius: 5px 5px;
+}
+
+.first-form {
+  padding: 30px;
+}
+
+.first-form .label-no {
+  font-size: 1rem;
+  font-family: 'Montserrat';
+  height: 30px;
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.first-form .label-no1 {
+  font-size: 1.2rem;
+  font-family: 'Montserrat';
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.first-form .search-btn {
+  color: black;
+  font-family: 'Montserrat';
+  margin: 0 auto;
+  -webkit-box-shadow: 1px 1px 2px grey;
+          box-shadow: 1px 1px 2px grey;
+}
+
+.first-form .input-option {
+  padding: 10px;
+}
+
+.first-form .first-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.first-form .flex-2 {
+  margin: 20px 0;
+}
+
+.first-form .input-numer {
+  width: 80px;
+}
+
+.confirm {
+  display: none;
+  width: 600px;
+  height: 300px;
+  background-color: white;
+  border: 2px solid #9DE1BC;
+  border-radius: 15px;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 30%;
+  top: 10%;
+  z-index: 9999;
+}
+
+.font-modal {
+  color: black;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+}
+
+.verif {
+  margin-top: 50px;
+}
+
+.flex-around {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#yes, #no {
+  width: 100px;
+  height: 40px;
+  margin-top: 50px;
+  font-family: 'Montserrat';
+  color: black;
+  border: 2px solid #9DE1BC;
+  font-size: 1rem;
+}
+
+#yes:active, #no:active {
+  margin-top: 52px;
+}
+
+.nb-gite-modal {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 1.3rem;
+  padding-top: 50px;
+}
+
+.list-gite-modal {
+  padding: 30px;
+  font-size: 1.3rem;
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
+.list-style-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+#list-gites {
+  display: inline-block;
+  max-width: 1000px;
+  width: 95%;
+}
+
+li.gites {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 2px solid #9DE1BC;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+.btn-bin-modif {
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.text-list-gite {
+  font-family: 'Montserrat';
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+}
+
+.form-ajout-new-gite {
+  border: 2px solid #9DE1BC;
+  border-radius: 20px;
+  max-width: 700px;
+  width: 80%;
+  margin: 50px auto;
+  padding: 50px;
+}
+
+.label-ajout {
+  font-family: 'Montserrat';
+  padding-right: 20px;
+}
+
+.input-ajout {
+  width: 350px;
+  border: 2px solid #9DE1BC;
+  border-radius: 5px;
+}
+
+.input-nb-add {
+  width: 40px;
+}
+
+.head-form-ajout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.descript-in {
+  height: 200px;
+  max-width: 600px;
+  width: 95%;
+  display: block;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-valid-ajout {
+  font-family: 'Montserrat';
+  font-size: 1rem;
+  border: 2px solid #9DE1BC;
+  cursor: pointer;
+  padding: 5px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: block;
+  margin: 10px auto;
+}
+
+#modif-nb-ch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.btn-valid-ajout:hover {
+  background-color: #9DE1BC;
+  -webkit-box-shadow: inset 0 0 7px #6d72af;
+          box-shadow: inset 0 0 7px #6d72af;
+}
+
+.ajout-lab-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.ajout-lab-in .label-ajout {
+  padding-left: 30px;
+  text-align: center;
+}
+
+.row-limit-size-resa-user {
+  max-width: 1400px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+#resa-admin-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+#resa-admin-list #table-resa {
+  border-collapse: collapse;
+  display: block;
+}
+
+#resa-admin-list #table-resa .td {
+  height: 40px;
+  text-align: center;
+  border: 2px solid #9DE1BC;
+  font-size: 1rem;
+  font-family: 'Montserrat';
+  line-height: 40px;
+}
+
+#resa-admin-list #table-resa #td-s {
+  width: 80px;
+}
+
+#resa-admin-list #table-resa #td-m {
+  width: 100px;
+}
+
+#resa-admin-list #table-resa #td-l {
+  width: 150px;
+}
+
+#resa-admin-list #table-resa #td-xl {
+  width: 300px;
+}
+
+#resa-admin-list #table-resa-responsive {
+  border-collapse: collapse;
+  display: none;
+}
+
+#resa-admin-list #table-resa-responsive #td-responsive {
+  border: 2px solid #9DE1BC;
+  padding: 10px;
+  font-size: 1rem;
+  font-family: 'Montserrat';
+  width: 600px;
+}
+
+.titre-reservation-ad {
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: 'Montserrat';
+}
+
+#img-container {
+  border: solid 2px #9DE1BC;
+  max-width: 100%;
+  width: 700px;
+  margin: 20px auto;
+}
+
+#list-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.li-image {
+  list-style-type: none;
+  margin: 1%;
+  position: relative;
+}
+
+.image-gite {
+  height: 120px;
+  width: 120px;
+}
+
+.icon-del > img {
+  width: 16px;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.icon-del:hover > img {
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1060px) {
+  #logo img {
+    width: 300px;
+    margin-top: 17px;
+  }
+  .lien {
+    font-size: 1rem;
+  }
+  .titre-page-gestion {
+    font-size: 1.5rem;
+    margin-top: 2px;
+  }
+  .confirm {
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .titre-form-connexion {
+    font-size: 1.6rem;
+  }
+  .titre-reservation-ad {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 965px) {
+  #td {
+    font-size: .8rem;
+  }
+  #resa-admin-list #table-resa {
+    display: none;
+  }
+  #resa-admin-list #table-resa-responsive {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 925px) {
+  .btn-ajout-gite {
+    width: 150px;
+    font-size: .8rem;
+  }
+  .btn-ajout-gite a {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .div-search-btn .input-p-ajout {
+    width: 330px;
+  }
+  .div-search-btn .btn-ajout-gite {
+    width: 120px;
+  }
+  #img-container {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .titre-form-connexion {
+    font-size: 1.2rem;
+  }
+  #logo img {
+    position: absolute;
+    left: calc(50% - 150px);
+    margin-top: 5px;
+  }
+  .li-header-admin {
+    font-size: .8rem;
+    margin-top: 35px;
+  }
+  .form-search {
+    margin-top: 10px;
+  }
+  .confirm {
+    left: 10%;
+  }
+  .label-ajout {
+    font-size: .9rem;
+  }
+  .div-search-btn .input-p-ajout {
+    width: 230px;
+  }
+  .form-add-search {
+    padding-bottom: 30px;
+  }
+  .id-connect {
+    font-size: 1.2rem;
+  }
+  .btn-connect {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .flex-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .type-option {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .type-option .label-no {
+    margin-left: 30px;
+  }
+  .first-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .first-flex .label-no {
+    padding-left: 20px;
+  }
+  .form-add-search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding: 10px 5px;
+    margin-left: 10px;
+  }
+  .div-search-btn .input-p-ajout {
+    width: 240px;
+    margin: 10px 10px 10px 30px;
+  }
+  .titre-form-search {
+    font-size: 1.2rem;
+  }
+  .btn-ajout-gite {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .label-no1 {
+    font-size: .8rem;
+  }
+  .confirm {
+    width: 500px;
+  }
+  .input-ajout {
+    width: 250px;
+  }
+  .titre-form-connexion {
+    font-size: 1rem;
+  }
+  .id-connect {
+    font-size: 1rem;
+  }
+  .input-connect {
+    height: 20px;
+  }
+  .modif-nb-gite {
+    display: block;
+  }
+  .input-nb-add {
+    width: 40px;
+  }
+  .descript-in {
+    max-width: 600px;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .titre-form-connexion {
+    font-size: 0.8rem;
+  }
+  .btn-connect {
+    font-size: 1rem;
+    margin: 20px auto;
+    padding: 3px 10px;
+  }
+  .form-add-search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding: 10px 5px;
+    margin-left: 10px;
+  }
+  .div-search-btn .input-p-ajout {
+    width: 240px;
+    margin: 10px 10px 10px 30px;
+  }
+  .div-search-btn .btn-ajout-gite {
+    width: 120px;
+    margin-top: 30px 0;
+    margin-left: 0;
+    font-size: .8rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .confirm {
+    width: 400px;
+    left: 8%;
+  }
+  .font-modal {
+    font-size: .8rem;
+  }
+  .form-ajout-new-gite {
+    padding: 40px 40px;
+  }
+  .input-connect {
+    height: 15px;
+  }
+  .descript-in {
+    height: 150px;
+  }
+  #modif-nb-ch {
+    display: block;
+  }
+  .label-ajout {
+    font-size: .8rem;
+    padding-right: 2px;
+  }
+  .btn-valid-ajout {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .head-form-ajout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .label-ajout {
+    padding-bottom: 5px;
+  }
+  .label-no1 {
+    margin-top: 20px;
+  }
+  .first-flex .label-no {
+    font-size: .8rem;
+  }
+  .first-form {
+    padding: 10px;
+  }
+  .nb-gite-modal {
+    font-size: 1rem;
+    padding-top: 50px;
+  }
+  .div-search-btn .input-p-ajout {
+    width: 210px;
+    margin-left: 20px;
+  }
+  .btn-ajout-gite {
+    margin-left: 20px;
+  }
+  .list-gite-modal {
+    font-size: .9rem;
+  }
+}
+
+@media screen and (max-width: 432px) {
+  ul {
+    display: block;
+    margin: 0 auto;
+  }
+  #logo img {
+    top: 0;
+  }
+  .li-header-admin {
+    display: block;
+    text-align: center;
+    height: 5px;
+  }
+  .lien {
+    height: 50px;
+  }
+  .lien-right {
+    float: inherit;
+  }
+  .titre-page-gestion {
+    font-size: 1.1rem;
+    margin-top: 50px;
+  }
+  .id-connect {
+    font-size: .5rem;
+  }
+  .confirm {
+    width: 300px;
+    height: 200px;
+  }
+  #yes, #no {
+    font-size: .8rem;
+  }
+  .titre-form-connexion {
+    margin: 0 10px;
+  }
+  #modif-nb-ch {
+    height: 50px;
+  }
+  .btn-connect {
+    font-size: .8rem;
+    padding: 2px 8px;
+  }
+  .titre-reservation-ad {
+    margin-top: 50px;
+    font-size: 1.2rem;
+  }
+  .text-list-gite {
+    font-size: .8rem;
+  }
+  .div-search-btn .input-p-ajout {
+    width: 150px;
+  }
+  .first-flex .input-numer {
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .titre-form-search {
+    font-size: .9rem;
+  }
+  .first-form .label-no1 {
+    font-size: 1rem;
+  }
+  .list-gite-modal {
+    padding-top: 0;
+  }
+  .nb-gite-modal {
+    font-size: .8rem;
+  }
+  .text-list-gite {
+    font-size: .6rem;
+  }
+  .div-search-btn .input-p-ajout {
+    width: 130px;
+  }
+  .div-search-btn .btn-ajout-gite {
+    font-size: .7rem;
+    width: 90px;
+  }
+  #list-images {
+    padding: 2px;
+  }
+}
+/*# sourceMappingURL=style-admin.css.map */

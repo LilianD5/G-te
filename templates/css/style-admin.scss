@@ -1,0 +1,808 @@
+@import 'reset';
+// PAGE CONNEXION ADMIN
+
+.background-index{
+    background: linear-gradient(90deg, rgb(147,239,189),rgb(112, 158, 189),#6d72af 95%);
+}
+.form-connexion{
+    margin: 100px auto;
+    max-width: 800px;
+    width: 80%;
+    border: 2px solid #9DE1BC;
+    border-radius: 30px 30px;
+    background-color: white;
+    box-shadow: 0px 0px 30px #7c7c7c;
+}
+.titre-form-connexion{
+    color: #A2A7D9;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Montserrat';
+    padding: 3%;
+}
+.id-connect{
+    color: #A2A7D9;
+    font-family: 'Montserrat';
+    font-size: 1.7rem;
+    display: block;
+    padding: 2% 14% ;
+}
+.input-connect{
+    max-width: 600px;
+    width: 70%;
+    height: 40px;
+    align-items: center;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #9DE1BC;
+}
+.btn-connect{
+    align-items: center;
+    display: block;
+    margin: 50px auto;
+    background-color: white;
+    border: 2px solid #9DE1BC;
+    border-radius: 5px 5px;
+    font-size: 1.5rem;
+    color: #A2A7D9;
+    padding: 8px 50px;
+    cursor: pointer;
+
+}
+.btn-connect:hover{
+    background-color: #9DE1BC;
+    color: white;
+}
+
+//HEADER PAGE ADMIN
+
+.row-limit-size {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.li-header-admin{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.lien {
+    text-decoration: none;
+    color: black;
+    height: 100px;
+    line-height: 85px;
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+}
+
+.lien-right{
+    float: right;
+}
+
+// MAIN PAGE GESTION ADMIN
+
+//h2 DU MAIN
+.titre-page-gestion{
+    font-family: 'Montserrat';
+    font-size: 2.4rem;
+    text-align: center;
+    margin-top: 70px;
+}
+// PREMIER FORMULAIRE DU SITE -> AJOUT GITE/ RECHERCHE
+.btn-ajout-gite{
+    background-color: white;
+    border: 2px solid #9DE1BC;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 30px;
+    border-radius: 5px 5px;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+.btn-ajout-gite:hover{
+    background-color: #9DE1BC;
+}
+
+.titre-form-search{
+    font-size: 1.5rem;
+    font-family: 'Montserrat';
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+.form-add-search{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 850px;
+    width: 95%;
+    padding-top: 50px;
+}
+.form-search{
+    padding: 10px;
+    
+}
+.div-search-btn{
+    .input-p-ajout{
+        height: 25px;
+        width: 400px;
+        border: 2px solid #9DE1BC;
+        border-radius: 5px 5px;
+    }
+}
+
+// GRAND FORMULAIRE/ RECHERCHE AVANCEE 
+.first-form{
+    padding: 30px;
+    .label-no{
+        font-size: 1rem;
+        font-family: 'Montserrat';
+        height: 30px;
+        line-height: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .label-no1{
+        font-size: 1.2rem;
+        font-family: 'Montserrat';
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .search-btn{
+        color: black;
+        font-family: 'Montserrat';
+        margin: 0 auto;
+        box-shadow: 1px 1px 2px grey;
+    }
+    .input-option{
+        padding: 10px;
+    }
+    .first-flex{
+        display: flex;
+        justify-content: space-around;
+    }
+    .flex-2{
+        margin: 20px 0;
+    }
+    .input-numer{
+        width: 80px;
+    }
+    
+
+}
+
+//Modal
+
+.confirm {
+    display: none;
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    border: 2px solid #9DE1BC;
+    border-radius: 15px;
+    position: sticky;
+    left: 30%;
+    top: 10%;
+    z-index: 9999;
+}
+
+.font-modal {
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+}
+
+.verif{
+    margin-top: 50px;
+}
+
+.flex-around{
+    display: flex;
+    justify-content: space-around;
+}
+
+#yes, #no{
+    width: 100px;
+    height: 40px;
+    margin-top: 50px;
+    font-family: 'Montserrat';
+    color: black;
+    border: 2px solid #9DE1BC;
+    font-size: 1rem;
+}
+
+#yes:active, #no:active{
+    margin-top: 52px;
+}
+.nb-gite-modal{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 1.3rem;
+    padding-top: 50px;
+
+}
+.list-gite-modal{
+    padding: 30px;
+    font-size: 1.3rem;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+.list-style-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#list-gites{
+    display: inline-block;
+    max-width: 1000px;
+    width: 95%;
+}
+li.gites{
+    display:flex;
+    justify-content: space-between;
+    border: 2px solid #9DE1BC;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto;
+}
+// BOUTONS LISTE DE GITES
+
+.btn-bin-modif{
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.text-list-gite{
+    font-family: 'Montserrat';
+    flex-grow: 1;
+    flex-basis: 0;
+}
+// PAGE FORMULAIRE AJOUT GITE / ADMIN
+.form-ajout-new-gite{
+    border: 2px solid #9DE1BC;
+    border-radius: 20px;
+    max-width: 700px;
+    width: 80%;
+    margin: 50px auto;
+    padding: 50px;
+}
+.label-ajout{
+    font-family: 'Montserrat';
+    padding-right: 20px;
+}
+.input-ajout{
+    width: 350px;
+    border: 2px solid #9DE1BC;
+    border-radius: 5px;
+}
+.input-nb-add{
+    width: 40px;
+}
+.head-form-ajout{
+    display: flex;
+    justify-content: space-between;
+}
+.descript-in{
+    height: 200px;
+    max-width: 600px;
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+
+}
+.btn-valid-ajout{
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    border: 2px solid #9DE1BC;
+    cursor: pointer;
+    padding: 5px 20px;
+    align-items: center;
+    display: block;
+    margin: 10px auto;
+}
+#modif-nb-ch{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-valid-ajout:hover{
+    background-color: #9DE1BC;
+    box-shadow: inset 0 0 7px #6d72af;
+}
+.ajout-lab-in{
+    display: flex;
+    margin-top: 10px;
+    .label-ajout{
+        padding-left: 30px;
+        text-align: center;
+    }
+}
+
+// TABLEAUX PAGE RESERVATION ADMIN 
+
+.row-limit-size-resa-user{
+    max-width: 1400px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+#resa-admin-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    #table-resa{
+        border-collapse: collapse;
+        display: block;
+        .td{
+            height: 40px;
+            text-align: center;
+            border: 2px solid #9DE1BC;
+            font-size: 1rem;
+            font-family: 'Montserrat';
+            line-height: 40px;
+        }
+        #td-s{
+            width: 80px;
+        }
+
+        #td-m{
+            width: 100px;
+        }
+
+        #td-l{
+            width: 150px;
+        }
+        #td-xl{
+            width: 300px;
+        }
+    }
+    #table-resa-responsive{
+        border-collapse: collapse;
+        display: none;
+        
+        #td-responsive{
+            border: 2px solid #9DE1BC;
+            padding: 10px;
+            font-size: 1rem;
+            font-family: 'Montserrat';
+            width: 600px;
+        }
+    }
+
+}
+.titre-reservation-ad{
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Montserrat';
+}
+#img-container{
+    border: solid 2px #9DE1BC;
+    max-width: 100%;
+    width: 700px;
+    margin: 20px auto;
+}
+
+#list-images{
+    display: flex;
+    justify-content: baseline;
+    flex-wrap: wrap;
+}
+
+.li-image {
+    list-style-type: none;
+    margin: 1%;
+    position: relative;
+}
+
+.image-gite {
+    height : 120px;
+    width: 120px;
+}
+
+.icon-del > img {
+    width: 16px;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    background-color: rgba(255,255,255,0.3)
+}
+
+.icon-del:hover > img{
+    background-color: rgba(255,255,255,0.5);
+    cursor: pointer;
+}
+
+// MEDIA QUERY HEADER________________________________________________
+@media screen and (max-width: 1060px) {
+    // MEDIA QUERY FORMULAIRE CONNEXION
+    #logo img{
+        width: 300px;
+        margin-top: 17px;
+    }
+    .lien {
+        font-size: 1rem;
+    }
+    .titre-page-gestion{
+        font-size: 1.5rem;
+        margin-top: 2px;
+    }
+    .confirm{
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    
+    .titre-form-connexion{
+        font-size: 1.6rem;
+    }
+    .titre-reservation-ad{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:965px) {
+    #td{
+        font-size: .8rem;
+    }
+    #resa-admin-list{
+        #table-resa{
+            display: none;
+        }
+        #table-resa-responsive{
+            display: block;
+        }
+    }
+}
+@media screen and (max-width: 925px) {
+    .btn-ajout-gite {
+        width: 150px;
+        font-size: .8rem;
+        a{
+            font-size: .8rem;
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    .div-search-btn{
+        .input-p-ajout{
+            width: 330px;
+        }
+        .btn-ajout-gite{
+            width: 120px;
+        }
+    }    
+    #img-container{
+        width: 500px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .titre-form-connexion{
+        font-size: 1.2rem;
+    }
+    #logo img{
+        position: absolute;
+        left: calc(50% - 150px);
+        margin-top: 5px;
+    }
+    .li-header-admin{
+        font-size: .8rem;
+        margin-top: 35px;
+    }    
+    .form-search{
+        margin-top: 10px;
+    }
+    .confirm{
+        left: 10%;
+
+    }
+    .label-ajout{
+        font-size: .9rem;
+    }
+    .div-search-btn{
+        .input-p-ajout{
+            width: 230px;
+        }
+    }  
+    .form-add-search{
+        padding-bottom: 30px;
+    }
+    // MEDIA QUERY FORMULAIRE CONNEXION
+    .id-connect{
+        font-size: 1.2rem;
+    }
+    .btn-connect{
+        font-size: 1.2rem;
+    }
+    
+    
+    
+}
+@media screen and (max-width: 700px) {
+    .flex-2{
+        display: flex;
+        flex-direction: column;
+    }
+    .type-option{
+        display: flex;
+        flex-direction: row;
+        .label-no{
+            margin-left: 30px;
+        }
+    }
+    .first-flex{
+        display: flex;
+        flex-direction: column;
+        .label-no{
+            padding-left: 20px;
+        }
+    }
+    .form-add-search{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        padding: 10px 5px;
+        margin-left: 10px;
+
+    }
+    .div-search-btn{
+        .input-p-ajout{
+            width: 240px;
+            margin: 10px 10px 10px 30px;
+        }
+       
+    }
+    .titre-form-search{
+        font-size: 1.2rem;
+        
+    }
+    .btn-ajout-gite {
+        width: 180px;
+    }
+}
+@media screen and (max-width:665px){
+    .label-no1{
+        font-size: .8rem;
+    }
+    .confirm{
+        width: 500px;
+        
+    }
+    .input-ajout{
+        width: 250px;
+    }
+    .titre-form-connexion{
+        font-size: 1rem;
+    }
+    .id-connect{
+        font-size: 1rem;
+    }
+    .input-connect{
+        height: 20px;
+    }
+    .modif-nb-gite{
+        display: block;
+
+    }
+    .input-nb-add{
+        width: 40px;
+    }
+    .descript-in{
+        max-width: 600px;
+        width: 95%;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    .titre-form-connexion{
+        font-size: 0.8rem;
+    }
+    
+    .btn-connect{
+        font-size: 1rem;
+        margin: 20px auto;
+        padding: 3px 10px;
+    }
+    
+    .form-add-search{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        padding: 10px 5px;
+        margin-left: 10px;
+    }
+    .div-search-btn{
+        .input-p-ajout{
+            width: 240px;
+            margin: 10px 10px 10px 30px;
+        }
+        .btn-ajout-gite{
+            width: 120px;
+            margin-top: 30px 0;
+            margin-left: 0;
+            font-size: .8rem;
+            text-align: center;
+        }
+    }
+}
+@media screen and (max-width: 570px) {
+    .confirm{
+        width: 400px;
+        left: 8%;
+    }
+    .font-modal{
+        font-size: .8rem;
+    }
+    .form-ajout-new-gite{
+        padding: 40px 40px;
+    }
+    .input-connect{
+        height: 15px;
+    }
+    .descript-in{
+        height: 150px;
+    }
+    #modif-nb-ch{
+        display: block;
+    }
+    .label-ajout{
+        font-size: .8rem;
+        padding-right: 2px;
+    }
+    .btn-valid-ajout{
+        font-size: .8rem;
+    }
+    
+}
+@media screen and (max-width: 490px) {
+    .head-form-ajout{
+        display: flex;
+        flex-direction: column;
+    }
+    .label-ajout{
+        padding-bottom: 5px;
+    }
+    .label-no1{
+        margin-top: 20px;
+    }
+    .first-flex{
+        .label-no{
+            font-size: .8rem;
+        }
+    }
+    .first-form{
+        padding: 10px;
+    }
+    .nb-gite-modal{
+        font-size: 1rem;
+        padding-top: 50px;
+    }
+    .div-search-btn{
+        .input-p-ajout{
+            width: 210px;
+            margin-left: 20px;
+        }
+        
+    }
+    .btn-ajout-gite {
+        margin-left: 20px;
+    }
+    .list-gite-modal{
+        font-size: .9rem;
+    }
+}
+@media screen and (max-width: 432px) {
+    ul {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #logo img {
+        top:0;
+    }
+
+    .li-header-admin {
+        display: block;
+        text-align: center;
+        height: 5px;
+    }
+
+    .lien { 
+        height: 50px;
+    }
+
+    .lien-right {
+        float: inherit;
+    }
+    .titre-page-gestion{
+        font-size: 1.1rem;
+        margin-top: 50px;
+    }
+    .id-connect{
+        font-size: .5rem;
+    }
+    .confirm{
+        width: 300px;
+        height: 200px;
+    }
+    #yes, #no{
+        font-size: .8rem;
+
+    }
+    .titre-form-connexion{
+        margin: 0 10px;
+    }
+    #modif-nb-ch{
+        height: 50px;
+    }
+    .btn-connect{
+        font-size: .8rem;
+        padding: 2px 8px;
+    }
+    .titre-reservation-ad{
+        margin-top: 50px;
+        font-size: 1.2rem;
+    }
+    .text-list-gite{
+        font-size: .8rem;
+    }
+    .div-search-btn{
+        .input-p-ajout{
+            width: 150px;
+        }
+        
+    }
+    .first-flex{
+        .input-numer{
+            width: 50px;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+    .titre-form-search{
+        font-size: .9rem;
+    }
+    .first-form{
+        .label-no1{
+            font-size: 1rem;
+        }
+    }
+    .list-gite-modal{
+        padding-top: 0;
+    }
+    .nb-gite-modal{
+        font-size: .8rem;
+    }
+    .text-list-gite{
+        font-size: .6rem;
+    }
+    .div-search-btn{
+        .input-p-ajout{
+            width: 130px;
+        }
+        .btn-ajout-gite{
+            font-size: .7rem;
+            width: 90px;
+        }
+    }
+    #list-images{
+        padding: 2px;
+    }
+}
